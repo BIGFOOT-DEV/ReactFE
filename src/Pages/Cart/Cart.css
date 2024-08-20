@@ -1,0 +1,138 @@
+.cart{
+    margin-top: 100px;
+}
+
+.cart-item-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: gray;
+    font-size: max(1vw,12px);
+}
+
+.cart-item-title p{
+    text-align: center;
+    font-size: 1.5rem;
+ }
+
+.cart-item-item{
+    margin: 10px 0;
+    color: black;
+}
+
+.cart-item-item img{
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.cart-item-item p{
+   text-align: center;
+   font-size: 1.5rem;
+}
+
+.cart hr{
+    height: 1px;
+    border: none;
+    background-color: #e2e2e2;
+}
+
+.cross{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.cart-bottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw, 20px);
+}
+
+.cart-total{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.cart-total h2{
+    font-size: 2.5rem;
+}
+
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.cart-total-details p{
+    font-size: 1.5rem;
+}
+
+.cart-total-details b{
+    font-size: 1.5rem;
+}
+
+.cart-total hr{
+    margin: 10px 0;
+}
+
+.cart-total button{
+    background-color: tomato;
+    color: #e2e2e2;
+    border: none;
+    width: max(15vw, 200px);
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cart-promocode{
+    flex: 1;
+}
+
+.cart-promocode p{
+    color: #555;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.cart-promocode-input{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+}
+
+.cart-promocode-input input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+
+.cart-promocode-input button{
+    width: max(10vm,150px);
+    padding: 12px 5px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 2.0rem;
+    color: white;
+}
+
+@media (max-width:750px) {
+    .cart-bottom{
+        flex-direction: column-reverse;
+    }
+
+    .cart-promocode{
+        justify-content: start;
+    }
+}
