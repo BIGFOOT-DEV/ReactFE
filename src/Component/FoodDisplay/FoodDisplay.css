@@ -14,3 +14,32 @@
     gap: 30px;
     row-gap: 50px;
 }
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    font-size: 2.0rem;
+}
+
+.page-link{
+    font-size: 2.5rem;
+    padding: 2px 5px;
+    color: #626266;
+    cursor: pointer;
+}
+
+.active{
+    background-color: tomato;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
